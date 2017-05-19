@@ -1,5 +1,9 @@
 package com.Sthorm.Noxmod.proxy;
 
+import com.Sthorm.Noxmod.Noxmod;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.SidedProxy;
 
 /**
@@ -7,5 +11,9 @@ import net.minecraftforge.fml.common.SidedProxy;
  */
 public class ClientProxy extends CommonProxy
 {
-
+    @Override
+    public void registerItemRenderer (Item item, int meta, String id)
+    {
+        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Noxmod.modId + ":" + id, "inventory"));
+    }
 }

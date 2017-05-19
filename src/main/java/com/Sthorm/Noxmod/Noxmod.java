@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.Sthorm.Noxmod.proxy.CommonProxy;
+import com.Sthorm.Noxmod.items.ModItems;
 
 
 @Mod(modid = Noxmod.modId, name = Noxmod.name, version = Noxmod.version, acceptedMinecraftVersions = "[1.11.2]")
@@ -18,7 +19,7 @@ public class Noxmod
 
     public static final String modId = "nox";
     public static final String name = "Nox Mod";
-    public static final String version = "Hello Kirk!!!!";
+    public static final String version = "1.0.0";
 
     @Mod.Instance(modId)
     public static Noxmod instance;
@@ -26,6 +27,7 @@ public class Noxmod
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println(name + " is bringing light to the darkest nights");
+        ModItems.init();
     }
 
     @Mod.EventHandler
