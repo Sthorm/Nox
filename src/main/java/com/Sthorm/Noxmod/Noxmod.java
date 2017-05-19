@@ -18,7 +18,7 @@ public class Noxmod
 
     public static final String modId = "nox";
     public static final String name = "Nox Mod";
-    public static final String version = "1.0.0";
+    public static final String version = "Hello Kirk!!!!";
 
     @Mod.Instance(modId)
     public static Noxmod instance;
