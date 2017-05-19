@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Noxmod",
+  "name": "Nox Mod",
+  "description": "Bringing light in the darkest night",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sthorm"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
